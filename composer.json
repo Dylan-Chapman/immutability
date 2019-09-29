@@ -1,5 +1,5 @@
 {
-    "name": "Dylan-Chapman/immutability",
+    "name": "dylan-chapman/immutability",
     "description": "A simple Laravel package that allows you to enforce immutable attributes on Eloquent models.",
     "keywords": ["laravel","eloquent","immutable","attributes","orm","automatic"],
     "license": "MIT",
