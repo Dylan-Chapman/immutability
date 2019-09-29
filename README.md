@@ -10,7 +10,7 @@ Immutability is open-sourced software licensed under the [MIT license](http://op
 
 To get started with Immutability, add to your `composer.json` file as a dependency:
 
-    composer require davidmpeace/immutability
+    composer require Dylan-Chapman/immutability
 
 ### Basic Usage
 
