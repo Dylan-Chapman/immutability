@@ -3,6 +3,7 @@
 namespace Eloquent\Attributes;
 
 use Eloquent\Attributes\Exceptions\ImmutableFieldViolationException;
+use Illuminate\Support\Arr;
 
 trait Immutability
 {
@@ -80,7 +81,7 @@ trait Immutability
         if( $this->exists && $this->isImmutable($attribute) && !$this->bypassImmutabilityCheck($attribute) ) {
             if( func_num_args() == 2 ) {
                 if( array_key_exists($attribute, $this->attributes) ) {
-                    $currentValue = array_get($this->attributes, $attribute);
+                    $currentValue = Arr::get($this->attributes, $attribute);
                     $violated     = ($newValue != $currentValue);
                 }
             } else {
